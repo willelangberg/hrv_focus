@@ -12,54 +12,63 @@
     <h1>HRV Focus Monitor</h1>
     <p>Predicting cognitive fatigue using HRV and behavioral signals</p>
   </header>
+
   <main>
     <section>
       <h2>About the Project</h2>
       <p>
-        HRV Focus Monitor is a non-commercial, early-stage research project designed to predict cognitive fatigue using biometric signals such as enhanced beat-to-beat interval (RR), heart rate, stress, and sleep data — all sourced via the Garmin Health API. The system is developed in Python and currently serves a single-user (the developer) in a local-only setup.
+        HRV Focus Monitor is a non-commercial, early-stage research project aimed at predicting cognitive fatigue through biometric signals like heart rate variability (HRV), stress, and sleep data, leveraging the Garmin Health API. The Python-based system is currently tailored to single-user experimentation, optimized for scalability and broader potential usage.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Garmin?</h2>
+      <p>
+        Garmin devices provide rich biometric data essential for real-time analysis of stress, recovery, and cognitive performance. HRV and heart-rate insights from Garmin wearables specifically support detailed trend analysis crucial for precise fatigue prediction during cognitively intensive activities.
       </p>
     </section>
 
     <section>
       <h2>How It Works</h2>
       <ul>
-        <li><strong>Data Collection:</strong> Garmin wearables provide HR, RR interval, stress, and sleep data in JSON format via the Health API.</li>
-        <li><strong>Behavioral Inputs:</strong> The user submits daily self-ratings on focus, energy, sleep quality, and subjective fatigue.</li>
-        <li><strong>Local Processing:</strong> A Python-based model analyzes correlations and predicts upcoming focus dips.</li>
-        <li><strong>Outputs:</strong> Currently outputs local logs and graphs. Future versions may integrate a dashboard (e.g., Streamlit).</li>
+        <li><strong>Data Collection:</strong> Garmin Health API delivers HR, RR intervals, stress, and sleep data in structured JSON format.</li>
+        <li><strong>User Input:</strong> Daily subjective ratings on focus, energy, and fatigue complement biometric data.</li>
+        <li><strong>Analysis and Predictions:</strong> Python models assess correlations to predict cognitive productivity dips proactively.</li>
+        <li><strong>Future Goals:</strong> Integration with interactive dashboards and broader user accessibility.</li>
       </ul>
       <img class="diagram" src="./assets/hrv_architecture_diagram.png" alt="System Architecture Diagram">
     </section>
 
     <section>
-      <h2>Data & Privacy</h2>
+      <h2>Privacy & Compliance</h2>
       <p>
-        All data is collected with explicit consent and used solely for real-time feedback and research. The application does not share, sync, or transmit any user data. Data is stored locally and encrypted. The project complies with GDPR principles.
+        Data security and user privacy are central to the HRV Focus Monitor project. All collected data remains local, encrypted, and strictly confidential. The application adheres fully to GDPR regulations and best practices in personal data management.
       </p>
       <p>
-        Learn more in the full <a href="https://willelangberg.github.io/hrv_focus/">Privacy Policy</a>.
+        For more details, please review our comprehensive <a href="https://willelangberg.github.io/hrv_focus/">Privacy Policy</a>.
       </p>
     </section>
 
     <section>
       <h2>Developer Notes</h2>
       <ul>
-        <li>Integration uses Garmin's <strong>REST Architecture</strong></li>
-        <li>JSON-format data is parsed into a local fatigue prediction model</li>
-        <li>No commercial use planned — license-based data such as RR intervals used strictly for testing</li>
-        <li>Fully aligned with Garmin's data structure and developer tooling</li>
+        <li>Built on Garmin's RESTful API architecture for reliable and robust data integration.</li>
+        <li>JSON data is parsed and utilized within advanced predictive modeling frameworks.</li>
+        <li>No commercial intentions—data usage is purely experimental and licensed appropriately.</li>
+        <li>Fully compliant with Garmin's developer guidelines and documentation.</li>
       </ul>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>Wille Langberg</p>
+      <p><strong>Wille Langberg</strong></p>
       <p>Email: <a href="mailto:wille.langberg9@gmail.com">wille.langberg9@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/willelangberg">@willelangberg</a></p>
     </section>
   </main>
+
   <footer>
-    &copy; 2025 HRV Focus Monitor — Built for research and experimentation. Not affiliated with Garmin.
+    &copy; 2025 HRV Focus Monitor — Developed for research and experimentation purposes only. Not officially affiliated with Garmin.
   </footer>
 </body>
 </html>
