@@ -4,45 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HRV Focus Monitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #f4f6f9;
       color: #2c3e50;
+      line-height: 1.6;
     }
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(to right, #2c3e50, #34495e);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      font-weight: 600;
     }
     header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-      color: #b0bec5;
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      color: #cfd8dc;
     }
     main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
     section {
-      margin-bottom: 3rem;
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
     section h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3rem;
+      border-left: 4px solid #1565c0;
+      padding-left: 0.5rem;
+      margin-top: 0;
+      font-size: 1.5rem;
     }
     .diagram {
       width: 100%;
       max-width: 700px;
-      margin: 1rem auto;
+      margin: 1.5rem auto;
       display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     footer {
       text-align: center;
@@ -54,6 +68,12 @@
     a {
       color: #1565c0;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
 </head>
